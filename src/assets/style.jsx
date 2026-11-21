@@ -1,0 +1,1 @@
+export const container="px-3 py-5 container mx-auto"

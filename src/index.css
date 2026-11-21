@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+body {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+}
+
+@theme{
+
+    --color-button: #B90825;
+    --color-textPrimary: #05142B;
+    --color-warm: #f1f1f1;
+}
+
+.navbar a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+.partners-marquee {
+  animation: marquee 100s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
