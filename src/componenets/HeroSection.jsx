@@ -54,7 +54,7 @@ export default function () {
                 {heroImg.name}
               </h1>
 
-              <a className="btn bg-button text-white rounded-xl border-none text-lg shadow-none me-2 ">
+              <a className=" cursor-pointer bg-button text-white rounded-xl border-none text-[clamp(1.25rem,4vw,1.5rem)] p-3 shadow-none ">
                 View More
               </a>
             </div>

@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <div className=" px-3 py-5 container mx-auto fixed inset-x-0 z-20">
       <div className="navbar bg-white/40 backdrop-blur-md shadow-lg rounded-2xl">
-        <div className="navbar-start">
+        <div className="navbar-start relative">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="px-3 lg:hidden">
               <svg
@@ -31,8 +31,8 @@ export default function Navbar() {
               </svg>
             </div>
             <ul
-              tabIndex={-1}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              tabIndex={-1} 
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow h-dvh absolute -top-10 left-0"
             >
               <li>
                 <a className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent">
@@ -40,21 +40,13 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <a>About</a>
+                 <a className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent">About</a>
               </li>
               <li>
-                <a>Events</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                 <a className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent">Events</a>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                 <a className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -65,44 +57,28 @@ export default function Navbar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a className="font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]">
+              <a className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]">
                 Home
               </a>
             </li>
             <li>
-              <a className="font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]">
+              <a className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]">
                 About Us
               </a>
             </li>
-            <li className="dropdown">
+            <li>
               <div
-                className="font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]"
-                tabIndex={0}
-                role="button"
-              >
+                className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]"
+                             >
                 Events
               </div>
 
-              <ul
-                tabIndex={0}
-                className="dropdown-content menu bg-base-100 rounded-box z-50 w-40 p-2 shadow-lg"
-              >
-                <li>
-                  <a className="font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]">
-                    Submenu 1
-                  </a>
-                </li>
-                <li>
-                  <a className="font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]">
-                    Submenu 2
-                  </a>
-                </li>
-              </ul>
+            
             </li>
 
             <li>
               <a
-                className="font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]"
+                className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]"
                 href="#"
               >
                 Contact Us

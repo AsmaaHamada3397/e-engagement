@@ -1,1 +1,1 @@
-export const container="px-3 py-5 container mx-auto"
+export const container=" px-3 py-20 container mx-auto"

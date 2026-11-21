@@ -82,7 +82,7 @@ export default function KPIs() {
 
 
 return (
-  <div className="bg-warm py-5">
+  <div className="bg-warm">
 
   <div className={`${container} overflow-hidden`}>
     <h1 className="font-bold pb-16 text-[clamp(1rem,5vw,2rem)] text-center">Our Partners of Success</h1>
