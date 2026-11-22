@@ -11,6 +11,9 @@ const services = [
     id: 1,
     title: "title 1 ",
     image: img1,
+    related_data: [
+
+    ],
   },
   {
     id: 2,
@@ -47,35 +50,19 @@ export default function Services() {
             <div
               key={service.id}
               className="mb-6 relative group scale-95 hover:scale-100 transition-all ease-in-out duration-300 break-inside-avoid rounded-xl overflow-hidden shadow-[0px_0.5px_10px_0.5px_rgba(185,8,37,0.1)]"
-              onClick={() => document.getElementById("my_modal_3").showModal()}
             >
               <img src={service.image} alt="" />
 
-              <div className="hidden group-hover:flex group-hover:justify-end group-hover:items-end group-hover:cursor-pointer absolute w-full h-full top-0 bg-linear-to-b from-transparent to-[#000]">
+              <div className="hidden group-hover:flex group-hover:justify-end group-hover:items-end group-hover:cursor-pointer absolute w-full h-full top-0 bg-linear-to-b from-transparent to-black">
                 <p className="text-white p-12 text-[clamp(1rem,5vw,1.5rem)]">
                   {service.title}
                 </p>
               </div>
-
-             
             </div>
           );
         })}
       </div>
-       <dialog id="my_modal_3" className="modal">
-                <div className="modal-box">
-                  <form method="dialog ">
-                    {/* if there is a button in form, it will close the modal */}
-                    <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-                      ✕
-                    </button>
-                  </form>
-                  {/* <h3 className="font-bold text-lg">{service.title}</h3> */}
-                  <p className="py-4">
-                    Press ESC key or click on ✕ button to close
-                  </p>
-                </div>
-              </dialog>
+   
     </div>
   );
 }

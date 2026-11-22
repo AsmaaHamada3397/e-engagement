@@ -1,18 +1,17 @@
 import { container } from "../assets/style";
 import { BsTwitterX } from "react-icons/bs";
 import { CgFacebook } from "react-icons/cg";
-
+import logo from "../assets/images/e-engagement-logo-light.svg";
 export default function Footer() {
   return (
     <div className=" bg-textPrimary text-white ">
       <footer className={`${container} flex flex-col gap-10 items-center pb-5`}>
         <div className="flex justify-between flex-col md:flex-row gap-10 md:gap-0 w-full container">
           <aside>
-            <p>logo</p>
+            <img src={logo} className="w-50 h-30" alt="" />
             <p>
-              ACME Industries Ltd.
-              <br />
-              Providing reliable tech since 1992
+              E-Engagment company, <br />
+              Where employees connect
             </p>
           </aside>
 
@@ -29,10 +28,9 @@ export default function Footer() {
               <a className="border w-9 h-9 flex justify-center items-center rounded-full">
                 <BsTwitterX className="text-white" />
               </a>
-             
-                <a className="border w-9 h-9 flex justify-center items-center rounded-full">
-               <CgFacebook className="text-white text-xl" />
 
+              <a className="border w-9 h-9 flex justify-center items-center rounded-full">
+                <CgFacebook className="text-white text-xl" />
               </a>
             </div>
           </nav>
