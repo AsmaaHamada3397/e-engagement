@@ -1,4 +1,4 @@
-import { container } from "../assets/style";
+import { container, h1 } from "../assets/style";
 
 import img1 from "../assets/images/IMG-20241213-WA0020.jpg";
 import img2 from "../assets/images/IMG-20250205-WA0063.jpg";
@@ -35,27 +35,27 @@ export default function Gallery() {
         image: img5,
       },
         {
-        id: 1,
+        id: 6,
         title: "title 1 ",
         image: img1,
       },
       {
-        id: 2,
+        id: 7,
         title: "title 2 ",
         image: img2,
       },
       {
-        id: 3,
+        id: 8,
         title: "title 3 ",
         image: img3,
       },
       {
-        id: 4,
+        id: 9,
         title: "title 4 ",
         image: img4,
       },
       {
-        id: 5,
+        id: 10,
         title: "title 5 ",
         image: img5,
       },
@@ -63,7 +63,7 @@ export default function Gallery() {
   return (
     <div className="bg-warm">
       <div className={`${container}`}>
-        <h1 className="font-bold pb-16 text-[clamp(1rem,5vw,2rem)] text-center">
+        <h1 className={`${h1}`}>
           Events Gallery
         </h1>
 

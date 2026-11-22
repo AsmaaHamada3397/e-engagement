@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <div className=" px-3 py-5 container mx-auto fixed inset-x-0 z-20">
-      <div className="navbar bg-white/40 backdrop-blur-md shadow-lg rounded-2xl">
+      <div className="navbar bg-white/70 backdrop-blur-md shadow-lg rounded-2xl">
         <div className="navbar-start relative">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="px-3 lg:hidden">

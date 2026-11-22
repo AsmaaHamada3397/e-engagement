@@ -1,6 +1,4 @@
-import { container } from "../assets/style";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, FreeMode } from "swiper/modules";
+import { container ,h1 } from "../assets/style";
 
 import moneyFellows from "../assets/sponser/money-fellows-logo.svg";
 import fine from "../assets/sponser/fine-logo.svg";
@@ -85,15 +83,18 @@ return (
   <div className="bg-warm">
 
   <div className={`${container} overflow-hidden`}>
-    <h1 className="font-bold pb-16 text-[clamp(1rem,5vw,2rem)] text-center">Our Partners of Success</h1>
+   <h1 className={`${h1} pb-16`}>Our Partners of Success</h1>
     <div className="partners-marquee flex items-center gap-8 w-max">
       {[...partners, ...partners].map((partner, index) => (
-        <img
-          key={`${partner.id}-${index}`}
-          src={partner.image}
-          alt={partner.name}
-          className="w-30 md:w-44 h-28 shrink-0 object-contain rounded-2xl"
-        />
+        <div className="overflow-hidden">
+
+          <img
+            key={`${partner.id}-${index}`}
+            src={partner.image}
+            alt={partner.name}
+            className="w-30 md:w-44 h-28 shrink-0 object-contain rounded-2xl"
+          />
+        </div>
       ))}
     </div>
   </div>

@@ -1,4 +1,4 @@
-import { container } from "../assets/style";
+import { container ,h1 } from "../assets/style";
 import { FaWhatsapp } from "react-icons/fa";
 import { LiaPhoneSolid } from "react-icons/lia";
 import { TfiEmail } from "react-icons/tfi";
@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div className="">
       <div className={`${container} py-10 space-y-4`}>
-        <h1 className="font-bold pb-6 text-[clamp(1rem,5vw,2rem)] text-center">
+        <h1 className={`${h1}`}>
           Contact Us
         </h1>
 
