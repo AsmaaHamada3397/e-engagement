@@ -15,8 +15,8 @@ export default function Contact() {
           We’d love to hear from you. Feel free to reach out anytime!
         </p>
 
-        <div className="flex justify-center pt-10 flex-wrap gap-16">
-          <div className="rounded-xl shadow-[0px_2px_5px_2px_rgba(0,0,0,0.2)] p-6  flex flex-col gap-6 items-center justify-center">
+        <div className="flex justify-center pt-10 flex-wrap gap-8">
+          <div className="rounded-xl shadow-[0px_2px_5px_2px_rgba(0,0,0,0.2)] p-6  flex flex-col gap-6 items-center justify-center w-full md:max-w-[50%] lg:w-[30%]">
             
             
             <FaWhatsapp className="text-button text-[2.5rem]" />
@@ -27,7 +27,7 @@ export default function Contact() {
               +20 102 495 9020
             </a>
           </div>
-          <div className="rounded-xl shadow-[0px_2px_5px_2px_rgba(0,0,0,0.2)] p-6  flex flex-col gap-6 items-center justify-center">
+          <div className="rounded-xl shadow-[0px_2px_5px_2px_rgba(0,0,0,0.2)] p-6  flex flex-col gap-6 items-center justify-center w-full md:max-w-[50%] lg:w-[30%] ">
             
             
             <LiaPhoneSolid className="text-button text-[2.5rem]" />
@@ -37,7 +37,7 @@ export default function Contact() {
               +20 102 495 9020
             </a>
           </div>
-          <div className="rounded-xl shadow-[0px_2px_5px_2px_rgba(0,0,0,0.2)] p-6  flex flex-col gap-6 items-center justify-center">
+          <div className="rounded-xl shadow-[0px_2px_5px_2px_rgba(0,0,0,0.2)] p-6  flex flex-col gap-6 items-center justify-center w-full md:max-w-[50%] lg:w-[30%]">
             
             
             <TfiEmail className="text-button text-[2.5rem]" />

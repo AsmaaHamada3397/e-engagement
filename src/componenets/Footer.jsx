@@ -2,6 +2,7 @@ import { container } from "../assets/style";
 import { BsTwitterX } from "react-icons/bs";
 import { CgFacebook } from "react-icons/cg";
 import logo from "../assets/images/e-engagement-logo-light.svg";
+import { Link } from "react-router";
 export default function Footer() {
   return (
     <div className=" bg-textPrimary text-white ">
@@ -16,10 +17,10 @@ export default function Footer() {
           </aside>
 
           <nav className="text-base flex flex-col gap-4">
-            <a>Home</a>
-            <a>About Us</a>
-            <a>Events</a>
-            <a>Contact Us</a>
+            <Link to="/#home">Home </Link>
+            <Link to="/#about">About Us</Link>
+            <Link to="/#events">Events</Link>
+            <Link to="/#contact">Contact Us</Link>
           </nav>
 
           <nav>

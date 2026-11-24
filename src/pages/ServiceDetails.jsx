@@ -24,7 +24,7 @@ export default function ServiceDetails() {
 
       <div className={`${container} pt-6 space-y-16`}>
         <div>
-        <div className="flex gap-4 pb-6">
+        <div className="flex gap-4 pb-6 flex-wrap">
           <div className="badge badge-secondary">#badge </div>
           <div className="badge badge-accent"> #badge </div>
           <div className="badge badge-neutral"> #badge </div>

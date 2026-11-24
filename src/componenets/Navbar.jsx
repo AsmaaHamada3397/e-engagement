@@ -1,11 +1,16 @@
 import { useState } from "react";
 import logo from "../assets/images/logo.png";
+import { Link } from "react-router";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+
+  const linkStyle =
+    "hover:bg-transparent active:!bg-transparent focus:!bg-transparent font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]";
 
   return (
     <div className=" px-3 py-5 container mx-auto fixed inset-x-0 z-20">
@@ -31,22 +36,31 @@ export default function Navbar() {
               </svg>
             </div>
             <ul
-              tabIndex={-1} 
+              tabIndex={-1}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow h-dvh absolute -top-10 left-0"
             >
               <li>
-                <a className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent">
+                <Link to="/#home" className={linkStyle}>
                   Home
-                </a>
+                </Link>
               </li>
+
               <li>
-                 <a className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent">About</a>
+                <Link to="/#about" className={linkStyle}>
+                  About Us
+                </Link>
               </li>
+
               <li>
-                 <a className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent">Events</a>
+                <Link to="/#events" className={linkStyle}>
+                  Events
+                </Link>
               </li>
+
               <li>
-                 <a className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent">Contact Us</a>
+                <Link to="/#contact" className={linkStyle}>
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
@@ -57,32 +71,27 @@ export default function Navbar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]">
+              <Link to="/#home" className={linkStyle}>
                 Home
-              </a>
+              </Link>
             </li>
+
             <li>
-              <a className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]">
+              <Link to="/#about" className={linkStyle}>
                 About Us
-              </a>
+              </Link>
             </li>
+
             <li>
-              <div
-                className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]"
-                             >
+              <Link to="/#events" className={linkStyle}>
                 Events
-              </div>
-
-            
+              </Link>
             </li>
 
             <li>
-              <a
-                className="hover:bg-transparent active:!bg-transparent focus:!bg-transparent font-bold text-textPrimary text-[clamp(1rem,10vw,1.1rem)]"
-                href="#"
-              >
+              <Link to="/#contact" className={linkStyle}>
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
